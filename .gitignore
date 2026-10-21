@@ -1,0 +1,54 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ── Build output ───────────────────────────────────────────────────────────────
+dist/
+build/
+client/dist/
+
+# ── Environment variables (never commit secrets) ───────────────────────────────
+.env
+.env.local
+.env.development
+.env.production
+# .env.example files are intentionally committed — they document required vars
+!**/.env.example
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+
+# ── Runtime / OS ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor & IDE ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── Vite cache ────────────────────────────────────────────────────────────────
+.vite/
+client/.vite/
+
+# ── Test coverage ─────────────────────────────────────────────────────────────
+coverage/
+
+# ── Local data / uploads ──────────────────────────────────────────────────────
+data/
+
+# ── Netlify local CLI artefacts (the netlify/ functions folder IS committed) ───
+.netlify/
+
+# ── render.yaml is intentionally committed ────────────────────────────────────

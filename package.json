@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n API,WEB -c cyan,green \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "test": "npm run test --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "npm run start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "name": "arivuyirkhol"
+}
